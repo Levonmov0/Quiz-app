@@ -1,0 +1,42 @@
+
+@media only screen and (min-width: 800px){
+
+.HomePage--container{
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.AppName{
+    font-size: 6rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    height: 6rem; 
+    text-align: center;
+    margin: 0px;
+    padding: 0px; 
+    border-bottom: 1px solid black; 
+}
+
+TextField{
+    margin-bottom: 30px;
+}
+
+.img--container{
+    margin: 8rem;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+.input-field{
+    margin-right: 20rem; 
+    display: flex; 
+    flex-direction: column;
+    width: 20rem; 
+}
+}
+
+

@@ -1,0 +1,13 @@
+@media only screen and (min-width: 800px){
+.header--quiz{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px; 
+    
+}
+
+.header--quiz > div > h2{
+    font-size: 40px;
+}
+}
