@@ -43,10 +43,6 @@ footer{
       border-bottom: 1px solid gray;
       margin-bottom: 20px;
     }
-    
-    body{
-        
-    }
     .input-field{
        display: flex;
        align-content: center;
