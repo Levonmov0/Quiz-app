@@ -18,6 +18,7 @@ function App() {
         category && `&category=${category}`
       }${difficulty && `&difficulty=${difficulty}`}&type=multiple`
     );
+
     
 
     console.log(data.results)

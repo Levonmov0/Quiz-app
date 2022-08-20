@@ -22,13 +22,12 @@
     background: black; 
   }
 *{
-    scrollbar-width: thin;
     font-weight: 400;
 }
 
 body{
     background-image: url('./images/2384075.webp');
-    height: min-content; 
+    height: 100%;  
     font-family: 'Alumni Sans Collegiate One';
 }
 
@@ -37,6 +36,9 @@ footer{
 }
 
 @media only screen and (max-width: 800px){
+    body{
+        height: 100%; 
+    }
     .AppName{
       text-align: center;
       font-size: 60px;
@@ -60,7 +62,7 @@ footer{
         display: flex; 
         align-items: center;
         justify-content: center;
-        margin: 10px; 
+        margin: 0px; 
         font-size: 30px;
     }
     .question--q{
@@ -110,5 +112,39 @@ footer{
     }
     .Button--container{
         margin: 0px; 
+    }
+    .results--container{
+        display: flex; 
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        border: 2px solid red; 
+        height: 900px; 
+    }
+    .next--quit{
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 90px; 
+    }
+    
+    .results--goodjob{
+        margin: 0px; 
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        font-size: 90px;
+    }
+    .results--finalScore{
+        margin: 0px; 
+        margin-bottom: 40px; 
+        align-self: center;
+        font-size: 90px;
+    }
+    .results--container > Button{
+        width: 50%; 
+        align-self: center;
+        height: 8%; 
+        background-color: green;
     }
 }

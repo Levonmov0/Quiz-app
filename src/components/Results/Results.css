@@ -1,3 +1,33 @@
-vody{
+body{
     font-family: 'Times New Roman', Times, serif;
+}
+@media only screen and (min-width: 800px){
+
+.results--container{
+    display: flex; 
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border: 2px solid red; 
+    height: 900px; 
+}
+
+.results--goodjob{
+    margin: 0px; 
+    align-self: center;
+    justify-self: center;
+    font-size: 90px;
+}
+.results--finalScore{
+    margin: 0px; 
+    margin-bottom: 40px; 
+    align-self: center;
+    font-size: 90px;
+}
+.results--container > Button{
+    width: 30%; 
+    align-self: center;
+    height: 10%; 
+    background-color: green;
+}
 }

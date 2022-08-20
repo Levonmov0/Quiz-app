@@ -18,25 +18,24 @@ const QuizPage = ({ name, questions, score, setScore, setQuestions }) => {
         questions[index].correct_answer,  ...questions[index].incorrect_answers
       ])) 
    
-
-
   }, [questions, index]);
+
 
   console.log(options)
 
 
 
   return (
-    <div>
+    <div className='Quizpage--container'>
       <main className='header--quiz'>
           <div className='goodLuck'>
             <h2 className='name--h2'>GoodLuck: {name}</h2>
           </div>
           <div>
-            <h2>Score: {score}</h2>
+            <h2 className='qiuzpage--score'>Score: {score}</h2>
           </div>
       </main>
-      {questions ? 
+      {questions &&
       <Question
       score={score}
       setScore={setScore}
@@ -47,7 +46,7 @@ const QuizPage = ({ name, questions, score, setScore, setQuestions }) => {
       options={options}
       setOptions={setOptions}
       correct={questions[index].correct_answer}
-      /> : <></>} 
+      /> } 
       
     </div>
   )

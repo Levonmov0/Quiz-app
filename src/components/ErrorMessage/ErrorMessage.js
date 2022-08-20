@@ -14,7 +14,6 @@ const ErrorMessage = (props) => {
         fontWeight: '10px', 
         fontFamily: 'Times New Roman',
         color: 'white',
-        border: '2px solid black'
     }
   return (
     <div style={styles}>

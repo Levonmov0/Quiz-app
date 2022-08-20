@@ -2,6 +2,7 @@ import React from 'react'
 import { Button } from '@mui/material';
 import {useNavigate} from 'react-router-dom'; 
 import { setSelectionRange } from '@testing-library/user-event/dist/utils';
+import './Results.css'
 
 const Results = ({score, name, setScore}) => {
 
@@ -11,9 +12,9 @@ const Results = ({score, name, setScore}) => {
     navigate('/')
   }
   return (
-    <div>
-      <h1>Good Job {name}!!</h1>
-      <h2>Final Score: {score}</h2>
+    <div className='results--container'>
+      <h1 className='results--goodjob'>Good Job {name}!</h1>
+      <h2 className='results--finalScore'>Final Score: {score}</h2>
       <Button
       variant='contained'
       color='primary'
