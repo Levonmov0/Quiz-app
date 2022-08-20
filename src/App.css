@@ -147,4 +147,15 @@ footer{
         height: 8%; 
         background-color: green;
     }
+    .pacman{
+        size: 500px;
+    }
+    
+    .pacmanloader{
+        height: 800px; 
+        width: 100%; 
+        display: flex; 
+        align-items: center;
+        justify-content: flex-start;
+    }
 }

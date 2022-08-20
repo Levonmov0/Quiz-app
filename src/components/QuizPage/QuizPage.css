@@ -18,4 +18,16 @@ body{
 .header--quiz > div > h2{
     font-size: 40px;
 }
+
+.pacman{
+    size: 100px;
+}
+
+.pacmanloader{
+    height: 900px; 
+    width: 100%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
 }

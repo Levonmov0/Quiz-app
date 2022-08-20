@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
+import { PacmanLoader } from 'react-spinners';
 import Question from '../Question/Question';
 import './QuizPage.css'
-const QuizPage = ({ name, questions, score, setScore, setQuestions }) => {
+const QuizPage = ({ name, questions, score, setScore, setQuestions, loading}) => {
 
   const [options, setOptions] = useState();
   const [index, setIndex] = useState(0); 
@@ -26,6 +27,9 @@ const QuizPage = ({ name, questions, score, setScore, setQuestions }) => {
 
 
   return (
+  <>
+    {loading ? <div className='pacmanloader'><PacmanLoader  className='pacman' size={40}  color="#cdc501" speedMultiplier={2}/> </div>
+    : 
     <div className='Quizpage--container'>
       <main className='header--quiz'>
           <div className='goodLuck'>
@@ -48,7 +52,8 @@ const QuizPage = ({ name, questions, score, setScore, setQuestions }) => {
       correct={questions[index].correct_answer}
       /> } 
       
-    </div>
+    </div>}
+  </>
   )
 }
 
