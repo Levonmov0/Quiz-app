@@ -8,7 +8,6 @@ body{
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    border: 2px solid red; 
     height: 900px; 
 }
 
